@@ -154,4 +154,6 @@ if __name__ == "__main__":
                              ' | merge - Merge existing and the new content')
     args = parser.parse_args()
 
-    migrate(args.fish_src, args.zsh_dst, args.strategy)
+    fish_src = os.path.expanduser(args.fish_src)
+    zsh_dst = os.path.expanduser(args.zsh_dst)
+    migrate(fish_src, zsh_dst, args.strategy)

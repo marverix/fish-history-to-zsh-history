@@ -2,7 +2,17 @@
 
 ## Usage
 
+### With curl
 
+```sh
+python3 -c "$(curl -fsSL https://raw.github.com/marverix/fish-history-to-zsh-history/master/fish-history-to-zsh-history.py)"
+```
+
+### With wget
+
+```sh
+python3 -c "$(wget https://raw.github.com/marverix/fish-history-to-zsh-history/master/fish-history-to-zsh-history.py -qO -)"
+```
 
 ## Options
 
