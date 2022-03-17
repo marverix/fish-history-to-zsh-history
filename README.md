@@ -1,2 +1,26 @@
-# fish-history-to-zsh-history
-Python converter from fish_history to zsh_history
+# Migrate fish_history to zsh_history
+
+## Usage
+
+
+
+## Options
+
+```sh
+❯ ./fish-history-to-zsh-history.py --help
+usage: fish_history to zsh_history [-h] [-f FISH_SRC] [-z ZSH_DST] [-s {abort,overwrite,merge}]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f FISH_SRC, --fish-src FISH_SRC
+                        fish_history location
+                        | Default: ~/.local/share/fish/fish_history
+  -z ZSH_DST, --zsh-dst ZSH_DST
+                        zsh_history location
+                        | Default: ~/.zsh_history
+  -s {abort,overwrite,merge}, --strategy {abort,overwrite,merge}
+                        Migrate strategy. What to do when zsh_dst is existing and is not empty?
+                        | abort - Abort migration (Default)
+                        | overwrite - Overwrite file
+                        | merge - Merge existing and the new content
+```
